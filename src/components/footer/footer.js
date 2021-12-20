@@ -3,7 +3,7 @@
 import { jsx, Box, Container, Image, Text } from 'theme-ui';
 import { Link } from '../link';
 import data from './footer.data';
-import FooterLogo from '../../assets/logo.svg';
+import FooterLogo from '../../../public/static/logo.svg';
 import React from 'react';
 
 export default function Footer() {

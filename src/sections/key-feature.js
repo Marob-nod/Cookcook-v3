@@ -3,10 +3,10 @@
 import { jsx, Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import RecipeCard from '../components/recipe-card';
-import Performance from '../assets/key-feature/performance.svg';
-import Partnership from '../assets/key-feature/partnership.svg';
-import Subscription from '../assets/key-feature/subscription.svg';
-import Support from '../assets/key-feature/support.svg';
+import Performance from '../../public/static/key-feature/performance.svg';
+import Partnership from '../../public/static/key-feature/partnership.svg';
+import Subscription from '../../public/static/key-feature/subscription.svg';
+import Support from '../../public/static/key-feature/support.svg';
 import React from 'react';
 
 const data = [

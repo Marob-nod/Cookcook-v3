@@ -1,19 +1,20 @@
 /** @jsxRuntime classic /
 /* @jsx jsx */
 import React from 'react';
-import { jsx, Container, Flex, Button } from 'theme-ui';
+import { Container, Flex, Button } from 'theme-ui';
 import { Link } from '../link';
-import { keyframes } from '@emotion/core';
+import { keyframes, jsx } from '@emotion/react';
 import Logo from '../logo';
-import LogoDark from '../../assets/logo.png';
+import LogoDark from '/public/static/logo.png';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
+
 
 export default function Header({ className }) {
   return (
     <header sx={styles.header} className={className} id='header'>
       <Container sx={styles.container}>
-        <Logo src={LogoDark} />
+        <Logo src="https://img.icons8.com/color/48/000000/cook-female.png" alt="1234" />
         <Flex as="nav" sx={styles.nav}>
           {menuItems.map((menuItem, i) => (
             <Link

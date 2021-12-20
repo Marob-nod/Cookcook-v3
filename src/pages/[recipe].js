@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import RecipeBanner from '../sections/recipe-banner';
 import RecipeSpecifications from '../sections/recipe-specifications';
 import InstructionsSection from '../sections/Instructions-section';
-import dataRecipes from '../assets/data/recipes'
+import dataRecipes from '../../public/static/data/recipes'
 import { useEffect, useState } from 'react';
 import React from 'react';
 

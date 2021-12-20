@@ -1,9 +1,9 @@
 /** @jsxRuntime classic /
 /* @jsx jsx */
 import { jsx, Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from '../assets/banner-thumb.png';
-import ShapeLeft from '../assets/shape-left.png';
-import ShapeRight from '../assets/shape-right.png';
+import BannerImg from '../../public/static/banner-thumb.png';
+import ShapeLeft from '../../public/static/shape-left.png';
+import ShapeRight from '../../public/static/shape-right.png';
 import React from 'react';
 
 export default function RecipeBanner({ name, description }) {

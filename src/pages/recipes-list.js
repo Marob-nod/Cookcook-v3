@@ -1,5 +1,5 @@
 import Layout from '../components/layout';
-import dataRecipes from '../assets/data/recipes'
+import dataRecipes from '../../public/static/data/recipes'
 import { ThemeProvider } from 'theme-ui';
 import theme from '../theme';
 import KeyFeature from '../sections/key-feature';

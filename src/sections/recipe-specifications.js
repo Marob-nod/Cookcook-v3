@@ -3,10 +3,10 @@
 import { jsx, Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from '../components/feature-card-column';
-import preptimeLogo from '../assets/prep-time.png'
-import servesLogo from '../assets/serves.png'
-import cookingTimeLogo from '../assets/cooking-time.png'
-import levelLogo from '../assets/level.png'
+import preptimeLogo from '../../public/static/prep-time.png'
+import servesLogo from '../../public/static/serves.png'
+import cookingTimeLogo from '../../public/static/cooking-time.png'
+import levelLogo from '../../public/static/level.png'
 import React from 'react';
 
 export default function RecipeSpecifications({ prepTime, cookTime, serves, level }) {
