@@ -11,9 +11,9 @@ export default function Footer() {
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link path="/">
+          {/* <Link path="/">
             <Image src={FooterLogo} alt="Logo" />
-          </Link>
+          </Link> */}
           <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItem.map((item, i) => (

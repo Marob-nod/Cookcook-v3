@@ -32,10 +32,10 @@ export default function Banner() {
               Explore the Recipes
             </Link></Button>
         </Box>
-        <Box sx={styles.banner.imageBox}>
+        {/* <Box sx={styles.banner.imageBox}>
           <Image src={BannerImg} alt="banner" />
 
-        </Box>
+        </Box> */}
       </Container>
     </section>
   );

@@ -20,7 +20,7 @@ export default function InstructionsSection({ ingredients, instructions }) {
           <Grid sx={styles.grid}>
             {instructions.map((feature, i) => (
               <Box sx={styles.card} key={feature.id}>
-                <Box sx={styles.card}>{i + 1}</Box>
+                <Box sx={styles.card.number}>{i + 1}</Box>
                 <Box sx={styles.wrapper}>
                   <Heading sx={styles.wrapper.title}>{feature.title}</Heading>
                   <Text sx={styles.wrapper.subTitle}>{feature.text}</Text>
@@ -57,6 +57,7 @@ const styles = {
     alignItems: ['flex-start', null, null,],
     justifyContent: ['flex-start', null, null, 'space-between'],
     flexDirection: ['column', null, null, 'row'],
+    padding: 10,
     pb: [0, null, null, null, null, 7],
   },
   thumbnail: {
@@ -137,8 +138,14 @@ const styles = {
   },
   card: {
     display: 'flex',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     transition: 'all 0.3s',
+
+    number: {
+      padding: 5,
+      fontSize: 5,
+      color: 'primary'
+    }
   },
 
   icon: {
