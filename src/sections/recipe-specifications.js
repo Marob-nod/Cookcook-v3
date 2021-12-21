@@ -13,28 +13,28 @@ export default function RecipeSpecifications({ prepTime, cookTime, serves, level
   const data = [
     {
       id: 1,
-      imgSrc: preptimeLogo,
+      imgSrc: "https://cdn-icons-png.flaticon.com/128/1830/1830839.png",
       altText: 'preparation time',
       title: 'PrepTime',
       value: prepTime
     },
     {
       id: 2,
-      imgSrc: cookingTimeLogo,
+      imgSrc: "https://cdn-icons-png.flaticon.com/512/651/651070.png",
       altText: 'cookTime',
       title: 'CookTime',
       value: cookTime
     },
     {
       id: 3,
-      imgSrc: servesLogo,
+      imgSrc: 'https://cdn-icons-png.flaticon.com/512/5110/5110336.png',
       altText: 'serves',
       title: 'Serves',
       value: serves
     },
     {
       id: 4,
-      imgSrc: levelLogo,
+      imgSrc: 'https://cdn-icons-png.flaticon.com/512/2983/2983936.png',
       altText: 'level',
       title: 'Level',
       value: level
@@ -51,7 +51,7 @@ export default function RecipeSpecifications({ prepTime, cookTime, serves, level
           {data.map((item, i) => (
             <FeatureCardColumn
               key={i}
-              src={item.imgSrc}
+              src={(item.imgSrc)}
               title={item.title}
               text={item.value}
             />
