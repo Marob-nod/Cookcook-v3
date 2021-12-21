@@ -1,7 +1,7 @@
 /** @jsxRuntime classic /
 /* @jsx jsx */
 import { Container, Box, Grid, Text, Heading, Button, Image } from 'theme-ui';
-import { keyframes, jsx, css } from '@emotion/react';
+import { keyframes, jsx, } from '@emotion/react';
 import TextFeature from '../components/text-feature';
 import React from 'react';
 

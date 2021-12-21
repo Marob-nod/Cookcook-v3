@@ -5,14 +5,13 @@ import { Container, Flex, Button } from 'theme-ui';
 import { Link } from '../link';
 import { keyframes, jsx } from '@emotion/react';
 import Logo from '../logo';
-import LogoDark from '/public/static/logo.png';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
 
 export default function Header({ className }) {
   return (
-    <header sx={styles.header} className={className} id='header'>
+    <header className={className} id='header'>
       <Container sx={styles.container}>
         <Logo src="https://img.icons8.com/color/48/000000/cook-female.png" alt="1234" />
         <Flex as="nav" sx={styles.nav}>
@@ -40,51 +39,31 @@ export default function Header({ className }) {
   );
 }
 
-const positionAnim = keyframes`
-  from {
-    position: fixed;
-    opacity: 1;
-  }
+// const positionAnim = keyframes`
+//   from {
+//     position: fixed;
+//     opacity: 1;
+//   }
 
-  to {
-    position: absolute;
-    opacity: 1;
-    transition: all 0.4s ease;
-  }
-`;
+//   to {
+//     position: absolute;
+//     opacity: 1;
+//     transition: all 0.4s ease;
+//   }
+// `;
 
 const styles = {
-  header: {
-    color: 'text',
-    fontWeight: 'body',
-    py: 4,
-    width: '100%',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    backgroundColor: 'transparent',
-    transition: 'all 0.4s ease',
-    animation: `${positionAnim} 0.4s ease`,
-    '.donate__btn': {
-      flexShrink: 0,
-      mr: [15, 20, null, null, 0],
-      ml: ['auto', null, null, null, 0],
-    },
-    '&.sticky': {
-      position: 'fixed',
-      backgroundColor: 'background',
-      color: '#000000',
-      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
-      py: 3,
-      'nev > a': {
-        color: 'text',
-      },
-    },
+  caca: {
+    boxShadow: ['none', null, '0 4px 10px rgba(39, 83, 123, 0.12)'],
   },
   container: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    backgroundColor: 'white',
+    padding: 3,
+
+    zIndex: 33,
   },
   nav: {
     mx: 'auto',
