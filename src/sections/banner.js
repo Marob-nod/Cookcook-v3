@@ -4,6 +4,7 @@ import { jsx, Container, Box, Heading, Text, Image, Button } from 'theme-ui';
 import BannerImg from '../../public/static/banner-thumb.png';
 import ShapeLeft from '../../public/static/shape-left.png';
 import ShapeRight from '../../public/static/shape-right.png';
+import { Link } from 'components/link';
 import React from 'react';
 
 export default function Banner() {
@@ -17,7 +18,19 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             When French and American culinar traditions meet ! Welcome to our family cookbook with all the recipes you like ! From de 'Gravy' to the 'Galette de pommes de terre', you will find all you are craving for !
           </Text>
-          <Button variant="primary">Explore the Recipes</Button>
+          <Button variant="primary">
+            <Link
+              sx={styles.banner.linkexplore}
+              activeClass='active'
+              to={'/recipes-list'}
+              path={'/recipes-list'}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Explore the Recipes
+            </Link></Button>
         </Box>
         <Box sx={styles.banner.imageBox}>
           <Image src={BannerImg} alt="banner" />
@@ -82,5 +95,9 @@ const styles = {
         height: [245, 'auto'],
       },
     },
+    linkexplore: {
+      color: 'white',
+      textDecoration: 'none'
+    }
   },
 };

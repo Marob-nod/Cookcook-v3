@@ -11,7 +11,7 @@ import menuItems from './header.data';
 
 export default function Header({ className }) {
   return (
-    <header className={className} id='header'>
+    <Container sx={styles.header} className={className} id='header'>
       <Container sx={styles.container}>
         <Logo src="https://img.icons8.com/color/48/000000/cook-female.png" alt="1234" />
         <Flex as="nav" sx={styles.nav}>
@@ -35,7 +35,7 @@ export default function Header({ className }) {
         </Button>
         <MobileDrawer />
       </Container>
-    </header>
+    </Container>
   );
 }
 
@@ -53,14 +53,18 @@ export default function Header({ className }) {
 // `;
 
 const styles = {
-  caca: {
+  header: {
     boxShadow: ['none', null, '0 4px 10px rgba(39, 83, 123, 0.12)'],
+    width: '100%',
+    //position: 'absolute',
+
   },
   container: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: 'white',
+    //width: '100%',
     padding: 3,
 
     zIndex: 33,
